@@ -1,20 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var villa = require("../models/villa");
-
-
 /* GET home page. */
-router.get('/', function (req, res) {
-  villa.find({}).exec(function (err, villa) {
-    if (err) {
-      console.log('Error : ', err);
-    } else {
-      console.log("->", villa);
-      res.render("index", { villa: villa });
-    }
-  });
-})
-
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Villas Neptune' });
+});
 
 module.exports = router;

@@ -17,6 +17,9 @@ mongoose.connect(url)
   .then(() =>  console.log('connection succesful'))
 
 
+var villas = require("./routes/villas");
+app.use("/catalogue", villas);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
