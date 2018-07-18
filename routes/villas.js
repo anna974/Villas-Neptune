@@ -11,7 +11,7 @@ router.get('/', function (req, res) {
       console.log('Error : ', err);
     } else {
       console.log("->", villa);
-      res.render("../views/villas/index", { villa: villa });
+      res.render("catalogue", { villa: villa });
     }
   });
 })
