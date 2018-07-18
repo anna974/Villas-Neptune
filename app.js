@@ -14,7 +14,7 @@ var url = "mongodb://localhost/catalogue_villas";
 mongoose.Promise = global.Promise;
 
 mongoose.connect(url)
-  .then(() =>  console.log('connection succesful'))
+  .then(() =>  console.log('connection successful'))
 
 
 var villas = require("./routes/villas");
