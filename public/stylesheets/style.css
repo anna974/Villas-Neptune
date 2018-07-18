@@ -1,11 +1,7 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-/* 
-body {
   font-family: 'Raleway', sans-serif;
-} */
+  background-color: #afa395;
+}
 
 .couleur-taupe {
   color: #afa395;
