@@ -10,15 +10,9 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/catalogue', function (req, res) {
-  villa.find({}).exec(function (err, villa) {
-    if (err) {
-      console.log('Error : ', err);
-    } else {
-      console.log("->", villa);
-      res.render("catalogue", { villa: villa });
+      res.render("catalogue");
     }
-  });
-})
+)
 
 
 module.exports = router;
