@@ -18,7 +18,7 @@ mongoose.connect(url)
 
 
 var villas = require("./routes/villas");
-app.use("/catalogue", villas);
+app.use("/admin", villas);
 
 
 // view engine setup

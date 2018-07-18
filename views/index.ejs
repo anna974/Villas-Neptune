@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-<body>
+<body class="bg-taupe">
 
     <header>
         <% include partials/navbar %>
@@ -29,45 +29,72 @@
 
             <div class="container">
                 <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="images/agate-pers.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Agate</h5>
-                            <p class="card-text">Descriptif</p>
-                            <p class="card-text">
-                                <small class="text-muted">Prix</small>
-                            </p>
-                            <a href="#" class="card-link">Voir plus</a>
+
+                    <% villa.forEach(function(element) {%>
+                        <div class="card">
+                            <img class="card-img-top" src="<%=villa.photo_pers%>" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%=element.nom_modele%>
+                                </h5>
+                                <p class="card-text">
+                                    <%=element.descriptif%>
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <%=element.prix%>
+                                    </small>
+                                </p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#<%=element.nom_modele%>">
+                                    Voir détails
+                                </button>
+                            </div>
+                            <!-- The Modal -->
+                            <div class="modal" id="<%=element.nom_modele%>">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">
+                                                <%=element.nom_modele%>
+                                            </h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <%=element.nb_pieces%> pièces dont
+                                                        <%=element.nb_chambres%> chambres</li>
+                                                <li class="list-group-item">Une suite parentale avec salle de bain</li>
+                                                <li class="list-group-item">shob :
+                                                    <%element.shob%>
+                                                </li>
+                                                <li class="list-group-item">Grand espace de vie</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="/images/agate-pers.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Atlantique</h5>
-                            <p class="card-text">Descriptif</p>
-                            <p class="card-text">
-                                <small class="text-muted">Prix</small>
-                            </p>
-                            <a href="#" class="card-link">Voir plus</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="images/agate-pers.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Indien</h5>
-                            <p class="card-text">Descriptif</p>
-                            <p class="card-text">
-                                <small class="text-muted">Prix</small>
-                            </p>
-                            <a href="#" class="card-link">Voir plus</a>
-                        </div>
-                    </div>
                 </div>
+
+
+
+
             </div>
         </div>
     </main>
 
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

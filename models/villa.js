@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 
 var VillaSchema = new mongoose.Schema({
+    nom_modele:String,
+    descriptif:String,
     photo_pers: String,
     photo_rdc: String,
     photo_etage: String,

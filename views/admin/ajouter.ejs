@@ -20,13 +20,21 @@
     </header>
 
     <main class="container text-center">
-        
+
 
         <div class="col-sm-12 row justify-content-center text-center">
 
             <form class=" col-sm-12 pb-4 mx-auto " action="/villa/save" method="POST">
                 <div class="form-group">
 
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Nom du modèle:</label>
+                        <input class="col-sm-5" type="text" name="nom_modele" />
+                    </div>
+                    <div class=" my-3">
+                            <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Descriptif :</label>
+                            <input class="col-sm-5" type="text" name="descriptif" />
+                        </div>
                     <div class=" my-3">
                         <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Photo perspective:</label>
                         <input class="col-sm-5" type="text" name="photo_pers" placeholder="lien de la photo" />

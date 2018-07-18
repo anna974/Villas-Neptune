@@ -4,13 +4,11 @@ var router = express.Router();
 var villa = require("../controllers/villacontrollers");
 
 
-//liste des ateliers
-router.get("/liste", villa.list);
 
-//accéder à la page d'inscription
+//accéder à la page d'ajout
 router.get("/ajout", villa.create);
 
-//Créer un atelier
+//Créer un modèle
 router.post("/save", villa.save);
 
 
