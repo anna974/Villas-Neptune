@@ -1,11 +1,11 @@
 
 var express = require('express');
 var router = express.Router();
-var villa = require("../controllers/villacontroller");
+var villa = require("../controllers/villacontrollers");
 
 
 //liste des ateliers
-router.get("/", villa.list);
+router.get("/liste", villa.list);
 
 //accéder à la page d'inscription
 router.get("/ajout", villa.create);
