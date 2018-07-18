@@ -1,8 +1,3 @@
-var express = require('express');
-var router = express.Router();
-
-var villa = require("../models/villa");
-
 
 var express = require('express');
 var router = express.Router();
