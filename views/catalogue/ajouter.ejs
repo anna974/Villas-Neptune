@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Catalogue - Villas Neptune</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <% include ../partials/navbar %>
+    </header>
+
+    <main class="container text-center">
+        
+
+        <div class="col-sm-12 row justify-content-center text-center">
+
+            <form class=" col-sm-12 pb-4 mx-auto " action="/villa/save" method="POST">
+                <div class="form-group">
+
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Photo perspective:</label>
+                        <input class="col-sm-5" type="text" name="photo_pers" placeholder="lien de la photo" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Photo RDC:</label>
+                        <input class="col-sm-5" type="text" name="photo_rdc" placeholder="lien de la photo" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Photo Etage:</label>
+                        <input class="col-sm-5" type="text" name="photo_rdc" placeholder="lien de la photo" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Nombre de pièces :</label>
+                        <input class="col-sm-5" type="number" name="nb_pieces" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Nombre de chambres :</label>
+                        <input class="col-sm-5" type="number" name="nb_chambres" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Prix :</label>
+                        <input class="col-sm-5" type="number" name="prix" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">SHOB :</label>
+                        <input class="col-sm-5" type="number" name="shob" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">SHON :</label>
+                        <input class="col-sm-5" type="number" name="shon" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface cuisine :</label>
+                        <input class="col-sm-5" type="number" name="surface_cuisine" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface sejour :</label>
+                        <input class="col-sm-5" type="number" name="surface_sejour" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface rangement :</label>
+                        <input class="col-sm-5" type="number" name="surface_rangement" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface cellier :</label>
+                        <input class="col-sm-5" type="number" name="surface_cellier" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface wc :</label>
+                        <input class="col-sm-5" type="number" name="surface_wc" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface suite parentale :</label>
+                        <input class="col-sm-5" type="number" name="surface_suiteparentale" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface Chambre 1 :</label>
+                        <input class="col-sm-5" type="number" name="surface_chambre1" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface Chambre 2 :</label>
+                        <input class="col-sm-5" type="number" name="surface_chambre2" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface Chambre 3 :</label>
+                        <input class="col-sm-5" type="number" name="surface_chambre3" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface salle de bains :</label>
+                        <input class="col-sm-5" type="number" name="surface_salledebains" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface habitable RDC :</label>
+                        <input class="col-sm-5" type="number" name="surface_habitable_rdc" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface habitable etage :</label>
+                        <input class="col-sm-5" type="number" name="surface_habitable_etage" placeholder="0" />
+                    </div>
+                    <div class=" my-3">
+                        <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Surface varangue :</label>
+                        <input class="col-sm-5" type="number" name="surface_varangue" placeholder="0" />
+                    </div>
+
+
+                    <button type="submit" class="btn text-light my-5">Ajouter</button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

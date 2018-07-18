@@ -9,10 +9,5 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/catalogue', function (req, res) {
-      res.render("catalogue");
-    }
-)
-
 
 module.exports = router;
