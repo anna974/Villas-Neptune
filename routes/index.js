@@ -2,6 +2,11 @@ var express = require('express');
 var router = express.Router();
 var Villa = require("../models/villa");
 var mongoose = require('mongoose');
+var fs = require('fs');
+var pdf = require('html-pdf');
+
+
+
 
 
 /* GET home page. */
@@ -14,5 +19,7 @@ router.get('/', function (req, res) {
         }
     });
 });
+
+
 
 module.exports = router;
