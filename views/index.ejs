@@ -39,18 +39,20 @@
                                 <%=element.nom_modele%>
                             </h5>
                             <p class="card-text">
-                                <%=element.descriptif%>
-                            </p>
-                            <p class="card-text">
                                 <small class="text-muted"> Prix : 
                                     <% if (element.prix == undefined) { %>
                                         N.C.
                                     <% } else { %>
                                     <%=element.prix%>
-                                    <% } %>
+                                    <% }; %>
                                     
                                 </small>
                                 <p>F<%=element.nb_pieces%></p>
+                                <% if (element.photo_etage) { %>
+                                <p>Un étage</p>
+                                <% } else { %>
+                                <p>Plain pied</p>
+                                <% }; %>
                             </p>
                             <div class="text-center">
                             <button type="button" class="btn bg-gris text-light" data-toggle="modal" data-target="#<%=element.nom_modele%>">
