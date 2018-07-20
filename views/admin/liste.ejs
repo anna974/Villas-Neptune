@@ -55,11 +55,11 @@ crossorigin="anonymous">
                             <th scope="col">Photo Etage</th>
                             <th scope="col">Nb de pièces</th>
                             <th scope="col">Nb chambres</th>
+                            <th scope="col">Suite parentale</th>
                             <th scope="col">Prix</th>
                             <th scope="col">SHOB</th>
                             <th scope="col">SHON</th>
                             <th scope="col">Surface habitable RDC</th>
-                            <th scope="col">Surface habitable étage</th>
                             <th scope="col">Modifier</th>
                         </tr>
                     </thead>
@@ -77,13 +77,16 @@ crossorigin="anonymous">
                                     <img class="w-50" src="<%= element.photo_rdc%>"
                                 </td>
                                 <td>
-                                    <img class="w-50" src="<%= element.photo_etage%>""
+                                    <img class="w-50" src="<%= element.photo_etage%>"
                                 </td>
                                 <td>
                                     <%= element.nb_pieces%>
                                 </td>
                                 <td>
                                     <%= element.nb_chambres%>
+                                </td>
+                                <td>
+                                    <%= element.suite_parentale%>
                                 </td>
                                 <td>
                                     <%= element.prix%>
@@ -96,9 +99,6 @@ crossorigin="anonymous">
                                 </td>
                                 <td>
                                     <%= element.surface_habitable_rdc%>
-                                </td>
-                                <td>
-                                    <%= element.surface_habitable_etage%>
                                 </td>
                                 <td>
                                     <a href="/admin/edit/<%=element._id %>" role="button">

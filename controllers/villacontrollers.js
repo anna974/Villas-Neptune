@@ -5,19 +5,6 @@ var bodyParser = require('body-parser');
 
 var villaController = {};
 
-// var fs = require('fs');
-// var pdf = require('html-pdf');
-// var html = res.render('index', 'utf8');
-// var options = { format: 'Letter' };
-
-// villaController.convertpdf = function (req, res) {
-//     pdf.create(html, options).toFile('./catalogue.pdf', function (err, res) {
-//         if (err) return console.log(err);
-//         console.log(res);
-//     });
-// };
-
-
 
 // Liste des modèles
 villaController.liste = function (req, res) {
