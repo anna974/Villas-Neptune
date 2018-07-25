@@ -12,8 +12,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 var mongoose = require('mongoose');
-// var url = "mongodb://localhost/catalogue_villas";
-var url = "mongodb://anna974:simplon974@ds131601.mlab.com:31601/neptune"
+var url = "mongodb://localhost/catalogue_villas";
 mongoose.Promise = global.Promise;
 
 mongoose.connect(url)
